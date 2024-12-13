@@ -36,7 +36,7 @@ body{
     height: 450px;
     margin: 0 auto;
     padding: 20px;
-    
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
     border-radius: 20px;
     
 }
