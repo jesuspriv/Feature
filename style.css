@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+header{
+    text-align: center;
+    margin: 50px 0;
+}
+body{
+    background-color: #121826;
+    background-image: url("Background_image@3x.png");
+    color: white;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #D2D5DA;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 300px;
+    flex-wrap: wrap; /* Permite que las cartas se ajusten en pantallas pequeñas */
+    margin-right: 300px;
+}
+.parr{
+    margin-top: 20px;
+}
+.card {
+    background-color: #212936;
+    width: 320px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 20px;
+    
+}
+.sub_title{
+    font-size: 1.23rem;
+    color: #D2D5DA;
+}
+.info{
+    margin-right: 60px;
+}
+
+p{
+    font-size: 1rem;
+    color: #9DA3AE;
+}
+.emoji{
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FCEED8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.emoji, .sub_title, .info {
+    padding: 15px 0;
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Ajuste para tablets (pantallas medianas) */
+@media (max-width: 768px) {
+    .container {
+        gap: 15px; 
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 80%; 
+    }
+}
+
+/* Ajuste para móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .emoji {
+        width: 50px;
+        height: 50px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
